@@ -1,0 +1,56 @@
+div.center img
+{
+    margin: 2em;
+}
+.header1
+{
+    text-align: center;
+    font-size: 3.2em;
+}
+.font1
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p.paragraph
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.4em;
+}
+h2
+{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+h2.margin
+{
+    margin-top: 2em;
+}
+ul.sidemenu li a
+{
+    overflow: hidden;
+    text-align: center;
+    margin-left: 1em;
+    font-size: 1em;
+}
+.sidemenu
+{
+    border: 0.22em solid black;
+    border-radius: 2em;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #99c1de;
+}
+ul.sidemenu li.navbar a:hover
+{
+    background-color: #fde2e4;
+    color: black;
+}
+ul.sidemenu
+{
+    margin: 5em;
+ 
+}

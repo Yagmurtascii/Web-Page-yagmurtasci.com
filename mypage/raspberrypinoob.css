@@ -1,0 +1,131 @@
+body
+{
+
+    background-color: #99c1de;
+}
+nav li
+ {
+     padding: 0px;
+     margin: 0px;
+     overflow: hidden;
+     background-color: #fde2e4; 
+ }
+ .center
+ {
+     margin: auto;
+     display: table;
+ }
+ li.navbar
+ {
+     list-style-type: none;
+     float: left;
+ }
+ li a.link
+ {
+     text-align: center;
+     font-size: 29px;
+     color: black;
+     display: block;
+     text-decoration: none;
+     padding: 35px;
+ }
+ li a.link:hover
+ {
+     background-color: #99c1de;
+     color: white;
+
+ }
+ a.link:hover
+ {
+     font-size: 33px;
+ }
+img.center
+{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width:70em;
+    height: 30em;
+    margin-bottom: 3em;
+    padding: 1em 1em;
+    border: 0.2em solid black;
+    border-radius: 3em;
+}
+.center2
+{
+    margin: auto;
+    display: table;
+}
+h1
+{
+    margin: 1.2em;
+}
+.font2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font1
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul
+{
+     font-size: 1.3em;
+}
+ul li{
+   
+    list-style-type: decimal;
+}
+ul li ul li
+{
+    font-size: 0.8em;
+    list-style-type: square;
+}
+
+.margincontrol
+{
+    margin-left: 2em;
+    line-height: 2em;
+}
+ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover
+{
+    font-size: 1.5em;
+}
+ul li ul li ul li
+{
+    list-style-type: circle;
+}
+div.material
+{
+    background-color: burlywood;
+   margin: 1.5em;
+    padding: 1.2em;
+
+}
+.last
+{
+    color: rgb(190, 104, 33);
+    font-size: 1.9em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+img.altresimler
+{
+    margin: 1em;
+}
+.ayarlama
+{
+height: 30em;
+width: 40em;
+}
+.image
+{
+    display:table;
+    margin: auto;  
+}
+

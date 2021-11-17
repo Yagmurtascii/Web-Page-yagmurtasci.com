@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="raspberrypinoob.css">
+</head>
+<body>
+    <div class="center2">
+    <nav>
+    <ul>
+    <li class="navbar"><a class="link" href="myhomepage.htm">Ana Sayfa</a>
+    <li class="navbar"><a class="link" href="Programlama.htm">Programlama</a></li>
+    <li class="navbar"><a class="link"  href="RaspberryPiHomaPage.html">Raspberry Pi</a></li>
+    <!--<li class="navbar"><a class="link" href="">Unity</a></li>-->
+    <!--<li class="navbar"><a class="link" href="">Tasarım</a></li>-->
+    <!--<li class="navbar"><a class="link" href="">Oyun/Uygulama</a></li>>-->
+    <!--<li class="navbar"><a class="link" href="">Hakkımda</a></li>-->
+    </ul>
+    </nav>
+</div>
+<br>
+<img class="center" src="anaresim.jpg" alt="">
+
+<div class="material">
+    <h1 class="font1">İhtiyacımız olan malzemeler; </h1>
+
+<ul class="font2 margincontrol">
+    <li>Raspberry pi herhangi bir model</li>
+    <li>Güç kablosu</li>
+    <li>İnternet kablosu</li>
+    <li>HDMI bağlantısı</li>
+    <li>USB klavye ve Mouse</li>
+    <li>Win32 Disk İmager</li>
+    <li>SD Card Formatter</li>
+    <li>SD kart okuyucu</li>
+    <li>SD kart</li>
+</ul>
+</div>
+
+
+
+
+<div>
+    <h1 class="font1" style="text-align: center;">NOOBS ÜZERİNDEN RASPBERRY PI KURULUMU</h1>
+</div>
+<ul class="font2 margincontrol">
+    <li>SD kart okuyucumuzu bilgisayara takıyoruz ve bizim için uygun olan SD kart formatına kartımızı yerleştiriyoruz.</li>
+    <li>SD Card Formatter programını açıp SD kartımızı formatlıyoruz. SD kartınızı formatladığınızdan emin olun.
+        <br>
+        <img class="altresimler" src="SdCard.PNG" alt="">
+    </li>
+    <li>
+        <a href="https://www.raspberrypi.org/downloads/noobs/">Raspberry Pi sitesinden</a> Zip şeklinde ya da Torrent üzerinden indirin.
+
+        <br>
+        <img class="altresimler" src="noobs2.PNG" alt=""><br>
+        <img class="altresimler" src="noobs.PNG" alt="">
+    
+    
+    </li>
+    <li>Sağ tuş yapıp “Tümünü Ayıkla” kısmını seçiyoruz. Karşımıza böyle bir ekran geliyor. SD kartınızı seçtiğinizden emin olun.
+
+        <br>
+        <img class="altresimler" src="ayıklama.PNG" alt="">
+    </li>
+    <li>Yükleme bittikten sonra SD kartımızı sağ tuşa basıp güvenli bir şekilde çıkarıyoruz.</li>
+    <li>USB klavye,Mouse,güç kablosu,hdmi kablosu,internet kablosunu taktıktan sonra Rasppberry pi’ye güç veriyoruz.</li>
+    <li>HDMI ile görüntü aktardığımız cihazda karşımıza böyle bir ekran geliyor.
+        <br>
+        <img class="altresimler ayarlama" src="raspberrypikurulum1.jpg" alt="">
+
+
+
+    </li>
+    <li>Yüklemek istediğiniz işletim sistemimizi seçiyoruz ve install kısmınıa tıklıyoruz. Ben SD kartımın 8GB olması nedeniyle Raspberry Pi OS (32-bit) kurdum. Siz isterseniz Rasbian Full kurabilirsiniz. 
+        <ul class="font2 margincontrol">
+            <li>
+                Raspberry Pi OS Lite (32-bit) masaüstü desteğiyle gelmiyor. Yükleme durumunda görüntülenen terminal oluyor.
+            </li>
+        </ul>
+    </li>
+    <li>Karşımıza böyle bir ekran çıkıyor. Kurulumun bitmesini bekliyoruz.
+        <br>
+        <img class="altresimler ayarlama" src="kurulum2.png" alt="">
+    </li>
+    <li>Kurulum bittikten sonra aşağıdaki ekran geliyor ama daha sonrasında kapanıyorsa;
+        <br>
+        <div class="image">
+        <img class="altresimler "  src="dorduncu.jpg" alt="">
+        </div>
+    <ul class="margincontrol font2">
+        <li>Raspberry Pi gücümüzü kesiyoruz ve SD kartımızı Raspberry Pi ‘den çıkarıyoruz. SD kart okuyucumuzu bilgisayara takıyoruz ve bizim için uygun olan SD kart formatına kartımızı yerleştiriyoruz.</li>
+        <li>Bundan sonra yapılması gereken asıl işlem SD kart içinde bulunan config.txt  dosyasında birkaç düzenleme yapmak.</li>
+        <li>Config.txt dosyanı açtığımızda böyle bir ekranla karşılaşırız.
+            <br>
+            <img class="altresimler ayarlama" src="19.PNG" alt="">
+
+        </li>
+        <li>Düzenleyeceğimiz verilerin önünde yer alan # sembolü kaldırarak yorum satırlarını etkisizleştiriyoruz.Değiştirmemiz gereken değerler;
+            <ul class="margincontrol">
+               <li>hdmi_mode=4</li>
+               <li>hdmi_group=2</li>
+               <li>hdmi_force_hotplug=1</li>
+               <li>disable_overscan=0</li>
+               <li>overscan_right=24</li>
+               <li>overscan_left=24</li>
+               <li>overscan_top=24	</li>
+               <li>overscan_bottom=24</li>
+               <li>config_hdmi_boost=4</li>
+               <li>hdmi_ignore_edid=0xa5000080 (Eğer bu ifade config.txt içinde bulamadıysanız herhangi bir yere ekleyebilirsiniz.)</li>
+            </ul>
+            <li>Düzenleme bittikten sonra SD kartımızı sağ tuşa basıp güvenli bir şekilde çıkarıyoruz.</li>
+            <li>Raspberry Pi Os veya Raspberry Pi Os Lite işletim sistemi kurulu SD kartımızı Raspberry Pi ‘ye yerleştiriyoruz.</li>
+            <li>USB klavye,Mouse,güç kablosu,hdmi kablosu,internet kablosunu taktıktan sonra Rasppberry pi’ye güç veriyoruz.</li>
+        </li>
+    </li>
+    </ul>
+</ul>
+<p class="last">Ve işte oldu. Raspberry Pi kullanıma hazır. </p>
+</body>
+</html>

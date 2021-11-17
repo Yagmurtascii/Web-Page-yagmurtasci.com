@@ -1,0 +1,41 @@
+body
+       {
+           background-color: #99c1de;
+       }
+        nav li
+        {
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            background-color: #fde2e4; 
+        }
+        .center
+        {
+            margin: auto;
+            display: table;
+        }
+        li.navbar
+        {
+            list-style-type: none;
+            float: left;
+        }
+        li a
+        {
+            text-align: center;
+            font-size: 29px;
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 35px;
+        }
+        li a:hover
+        {
+            background-color: #99c1de;
+            color: white;
+  
+        }
+        
+        a:hover
+        {
+            font-size: 33px;
+        }

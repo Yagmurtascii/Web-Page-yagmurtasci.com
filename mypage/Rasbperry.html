@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="raspberrypi.css">
+</head>
+<body>
+    <div class="center">
+    <nav>
+        <ul >
+            <li class="navbar"><a  class="link" href="myhomepage.htm">Ana Sayfa</a>
+            <li class="navbar"><a class="link"  href="Programlama.htm">Programlama</a></li>
+            <li class="navbar"><a class="link"  href="RaspberryPiHomaPage.html">Raspberry Pi</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+    <h1 class="header font1">Raspberry Pi</h1>
+    <div class="image">
+        <img class="anaresim" src="anaresim.jpg" alt="Raspberry Pi Resim">
+    </div>
+  
+<div class="part1">
+    <h1 class="font1">Raspberry Pi Kurulumu</h1>   
+    <p class="font2">Eğer raspberry pi eski bir model varsa elinizde; NOOBS, Raspberry Pi Os, Raspberry Pi OS Lite, NOOBS Lite kurulumlarını nasıl yaparız onları göreceğiz.
+    İhtiyacımız olan malzemeler; </p>
+<ul class="font2 margincontrol">
+    <li>Raspberry pi herhangi bir model</li>
+    <li>Güç kablosu</li>
+    <li>İnternet kablosu</li>
+    <li>HDMI bağlantısı</li>
+    <li>USB klavye ve Mouse</li>
+    <li>Win32 Disk İmager</li>
+    <li>SD Card Formatter</li>
+    <li>SD kart okuyucu</li>
+    <li>SD kart</li>
+</ul>
+<p class="note2">
+        SD kart modelinizi raspberry pi’ye uygun seçilmelidir. Class 10 olması önerilir. Başlangıç için en az 8GB lık bir SD karta sahip olmanız şarttır.
+        Ama Raspberry pi modeliniz eskiyse 16-32 GB lık SD kartlar seçebilirsiniz. Kurulduktan sonra yavaş çalışabiliyor.
+</p>
+</div>
+ 
+ <h2>Kurulum</h2> 
+
+
+  
+  <p class="note font2"> NOT: Raspberry Pi Os, Raspberry Pi Os Lite gibi işletim sistemlerini doğrudan SD karta yazdırabilirsiniz. Veya NOOBS üzerinden kurulum gerçekleştirebilirsiniz.</p>
+  <br>
+
+<p class="font2 margin">
+    Raspberry Pi Os ve Raspberry Pi Os Lite(Masaüstü desteği mevcut değil) işletim sistemlerini kurmak için;
+</p>
+
+<ul class="list font2 margincontrol"> 
+    <li>SD kart okuyucumuzu bilgisayara takıyoruz ve bizim için uygun olan SD kart formatına kartımızı yerleştiriyoruz.</li>
+    <li>SD Card Formatter programını açıp SD kartımızı formatlıyoruz. SD kartınızı formatladığınızdan emin olun.</li>
+    <li > 
+        <a class="link"  href="https://www.raspberrypi.org/downloads/raspberry-pi-os/">Raspberry Pi sitesinden</a> Zip şeklinde ya da Torrent üzerinden indirin.
+        <br>
+        <img class="altresimler" src="raspberrypisitesi.PNG" alt="">
+        <br>
+
+        <img class="altresimler"  src="birinci.PNG" alt="ZIP">
+    </li>
+
+
+    <li>Sağ tuş yapıp “Tümünü Ayıkla” kısmını seçip içindeki disk görüntüleyiciyi buluyoruz.
+        <br>
+        <img  class="altresimler" src="ikinciresim.PNG" alt="Disk">
+    </li>
+    <li>Win32 Disk Imager programını açıp disk görüntü dosyasını seçiyoruz. Device kısmını doğru seçtiğinizden emin olun.
+        <br>
+        <img class="altresimler"  src="ucuncuresim.PNG" alt="Disk Imager">
+    </li>
+    <li>Yükleme bittikten sonra SD kartımızı sağ tuşa basıp güvenli bir şekilde çıkarıyoruz.</li>
+    <li>Raspberry Pi Os veya Raspberry Pi Os Lite işletim sistemi kurulu SD kartımızı Raspberry Pi ‘ye yerleştiriyoruz.</li>
+    <li>USB klavye,Mouse,güç kablosu,hdmi kablosu,internet kablosunu taktıktan sonra Rasppberry pi’ye güç veriyoruz.</li> 
+</ul>
+<div class="image">
+<img class="altresimler" src="dorduncu.jpg" alt="">
+<br>
+</div>
+
+
+
+<p class="font2 margin">
+    Bu ekrandan açıldıktan sonra kapanıyorsa yapmanız gerekenler;
+</p>
+ 
+
+<ul class="font2 margincontrol list">
+    <li>Raspberry Pi gücümüzü kesiyoruz ve SD kartımızı Raspberry Pi ‘den çıkarıyoruz. SD kart okuyucumuzu bilgisayara takıyoruz ve bizim için uygun olan SD kart formatına kartımızı yerleştiriyoruz. </li>
+    <li>Bundan sonra yapılması gereken asıl işlem SD kart içinde bulunan config.txt dosyasında birkaç düzenleme yapmak.</li>
+    <li>Config.txt dosyanı açtığımızda böyle bir ekranla karşılaşırız.
+<br>
+
+        <img class="altresimler"src="19.PNG" alt="">
+    </li>
+    <li>Düzenleyeceğimiz verilerin önünde yer alan # sembolü kaldırarak yorum satırlarını etkisizleştiriyoruz.</li>
+    <li>Değiştirmemiz gereken değerler;
+
+        <ul class="margincontrol" style="list-style-type: square;">
+            <li>hdmi_mode=4</li>
+            <li>hdmi_group=2</li>
+            <li>hdmi_force_hotplug=1</li>
+            <li>disable_overscan=0</li>
+            <li>overscan_right=24</li>
+            <li>overscan_left=24</li>
+            <li>overscan_top=24	</li>
+            <li>overscan_bottom=24</li>
+            <li>config_hdmi_boost=4</li>
+            <li>hdmi_ignore_edid=0xa5000080 (Eğer bu ifade config.txt içinde bulamadıysanız herhangi bir yere ekleyebilirsiniz.)</li>
+        </ul>
+    </li>
+    <li>Düzenleme bittikten sonra SD kartımızı sağ tuşa basıp güvenli bir şekilde çıkarıyoruz.</li>
+    <li>Raspberry Pi Os veya Raspberry Pi Os Lite işletim sistemi kurulu SD kartımızı Raspberry Pi ‘ye yerleştiriyoruz.</li>
+    <li>USB klavye,Mouse,güç kablosu,hdmi kablosu,internet kablosunu taktıktan sonra Rasppberry pi’ye güç veriyoruz.</li>
+</ul>
+<p class="font2 last">Ve işte oldu. Raspberry Pi kullanıma hazır. </p>
+</body>
+</html>

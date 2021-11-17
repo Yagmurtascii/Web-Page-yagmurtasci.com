@@ -1,0 +1,52 @@
+header
+{
+    margin: 2em;
+    background-color: #99c1de;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p.deneme
+{
+    border: 2px solid black;
+    padding: 23px;
+    margin: 23px;
+    font-size: 2em;
+    background-color: #99c1de;
+}
+a
+{
+    text-decoration: none;
+
+}
+.center2
+{
+    padding: 110px;
+    margin: auto;
+    display: table;
+}
+
+p
+{
+    font-size: 23px;
+}
+.center2 ul li
+{
+    padding: 1.3em;
+    text-transform: uppercase;
+    background-color: #99c1de;
+    border: 0.4em solid black;
+    border-style: dotted;
+    border-radius: 0.9em;
+    margin:1em;
+    list-style-type: none;
+    display: block;
+}
+.center2 ul li a:hover
+{
+    background-color: #fde2e4;
+    border-style: dashed;
+    color: black;
+    
+}
+

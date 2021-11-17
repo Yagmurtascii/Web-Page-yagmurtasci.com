@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="center">
+    <nav class="beginning">
+    <ul>
+    <li class="navbar"><a href="myhomepage.htm">Ana Sayfa</a>
+    <li class="navbar"><a href="Programlama.htm">Programlama</a></li>
+    <li class="navbar"><a href="RaspberryPiHomaPage.html">Raspberry Pi</a></li>
+</ul>
+</nav>
+</div>
+ <header>
+        <h2>C Programlama</h2>
+      </header>
+    <section>
+        <nav class="menu">
+          <ul>
+            <li><a href="#1">Algoritma Nedir?</a></li>
+            <li><a href="#2">C Programlama Nedir?</a></li>
+            <li><a href="#3">Sabitler</a></li>
+            <li><a href="#4">Değişkenler</a></li>
+            <li><a href="#5">Değişkenlerin Tanımlanması</a></li>
+            <li><a href="#6">Input/Output</a></li>
+            <li><a href="#7">Aritmatiksel Operatörler</a></li>
+            <li><a href="#8">Atama Operatörler</a></li>
+            <li><a href="#9">Unary Operatörler</a></li>
+            <li><a href="#10">Kontrol yapıları</a></li>
+            <li><a href="#11">If Kontrol Yapısı</a></li>
+            <li><a href="#12">Swıtch-Case Yapısı</a></li>
+            <li><a href="#13">Döngü Kontrol Yapısı</a></li>
+            <li><a href="#14">Anahtar Kelimeler</a></li>
+          </ul>
+        </nav>
+        
+          <h1 id="1">ALGORİTMA NEDİR?</h1>
+          <p>Algoritma; bir takım verilerden yola çıkarak ve sonlu sayıda aşamalardan geçerek belli bir problemi çözme imkanı veren, kesin komutlardan oluşan yapıdır.</p>
+          <p>Algoritma çalışmasındaki <em>mutlak zorunluluk</em> her türlü belirsizlikten arınmış olmasıdır.</p>
+          <p>Algoritma deyince aklımıza gelmesi gereken 4 temel madde;
+              <ul class="altlist">
+                  <li>Genellik</li>
+                  <li>Kesin sıralılık</li>
+                  <li>Sırayı belirleyen komutlar</li>
+                  <li>Sonlu  olması</li>
+              </ul>
+          </p>
+
+          <h1 id="2">C PROGRAMLAMA NEDİR?</h1>
+          <p>C kendinden önceki programlama dilleri olan B ve BCPL'nin gelişimidir. 1972 yılında Dennis Ritche tarafından AT&amp; T Bell Laboratuvarında tasarlanmıştır.
+              <ul class="altlist">
+                  <li>Güçlü ve esnek bir dildir.</li>
+                  <li>Yapısal bir dildir.</li>
+                  <li> Taşınabilir bir dildir. (Herhangi bir C kodu hiçbir değişikliğe uğramadan ya da az bir değişiklikle diğer derleyici de derlenebilir.)</li>
+                  <li>
+             İşletim sistemleri yazılabilir, kelime işlemcileri oluşturulabilir veya grafik tasarımı yapılabilir.</li>
+              </ul>
+            </p>
+            <h1 id="3">SABİTLER</h1>
+            <p>#define ve const ifadesi program boyunca asla değiştirilemez. 
+                <ul class="altlist">
+                    <li>const float PI=3.14;</li>
+                    <li>const char sifre []="softwareengineernotes";</li>
+                    <li>#define MAX 20</li>
+                    <li>#define HARF 'a'</li>
+                </ul>
+            </p>
+                <p>#define kısmında "MAX ve HARF" olarak tanımlanan ifade de büyük harflerin kullanılması zorunludur.</p>
+            <h1 id="4">DEĞİŞKENLER</h1>
+            <p>C dilinde kullanılan değişkenleri programın başında tanımlamamız gereklidir. C dilinde 4 temel veri tipi vardır.
+                <ul class="altlist">
+                    <li>character(char)</li>
+                    <li>integer(int)</li>
+                    <li>floating point (float)</li>
+                    <li>double floating point (double)</li>
+                </ul>
+            </p>
+
+            <h2>CHAR TİPİ DEĞİŞKENLER</h2>
+            <p>'A','c' gibi karakterleri tutmak için kullandığımız bir veri tipidir. %c ile gösterilir. 1 byte kadar yer tutar.</p>
+            <h2>İNT TİPİ DEĞİŞKENLER</h2>
+            <p>Tam sayıları tutmak için kullandığımız bir veri tipidir. %d ile ifade edilir. 4 byte kadar yer tutar.</p>
+            <h2>FLOAT TİPİ DEĞİŞKENLER</h2>
+            <p>Kesirli ve tam sayı tipinden daha geniş sınırlar arasındaki sayıları tutmakta kullandığımız bir veri tipidir. %f ile ifade edilir.4 byte kadar yer tutar.</p>
+             <h2>DOUBLE TİPİ DEĞİŞKENLER</h2>
+             <p>Kesirli ve tam sayı tipinden daha geniş sınırlar arasındaki sayıları tutmakta kullandığımız bir veri tipidir. %lf ile ifade edilir.8 byte kadar yer tutar.</p>
+             <div class="difference">
+            <h2 >FLOAT VE DOUBLE FARKI</h2>
+             <p>Float olarak değerlendirilen sayılar noktadan sonra 6 basamak tutarken double olarak değerlendirilen sayılar noktadan sonra 15 basamak tutar.</p>
+             <ul class="altlist">
+                 <li>FLOAT= 7.156495 </li>
+                 <li>DOUBLE=5.895612348596257</li>
+             </ul>
+             </div>
+     
+
+             <h1 id="5">DEĞİŞKENLERİN TANIMLANMASI</h1>
+             <p>Değişkenler programın başında tanımlanabilir ve "Global Değişken" olarak tanımlanır. Programda yer alan her fonksiyonda kullanılır.</p>
+             <p>Değişkenler main fonksiyon ya da diğer fonksiyonlar içinde tanımlanırsa "Local Değişken" olarak tanımlanır ve sadece tanımlandığı fonksiyonda kullanılır.
+             <ul class="altlist">
+                 <li>int tamsayi;</li>
+                 <li>double rasyonelsayi;</li>
+                 <li>float rasyonelsayi;</li>
+                 <li>char harf;</li>
+             </ul></p>
+             <p>Aynı tipte tanımlanacak ifadeler virgülle birbirinden ayrılabilir.             
+                 <ul class="altlist">
+                 <li>int a,b;</li>
+             </ul></p>
+
+             <h2>STATİC TİPİ DEĞİŞKENLER</h2>
+             <p>Herhangi bir değişken static tip değiştirici olarak tanımlanırsa fonksiyona ne zaman çağrılsa daha önceden tuttuğu değeri korur.        
+                <ul class="altlist">
+                 <li>static int x;</li>
+            </ul></p>
+     
+            <h2>REGİSTER TİPİ DEĞİŞKENLER</h2>
+            <p>Sadece int ve char değişken tiplerine izin verir. RAM belleğe değil mikroişlemcinin registerinde yer alır. Bu yüzden bu değişken tipiyle tanımlanan ifadeler daha hızlı çalışır.        
+            <ul class="altlist">
+                <li>register int a;</li>
+                <li>register char c;</li>
+            </ul></p>
+    
+
+            <h1 id="6">INPUT/OUTPUT</h1>
+            <h2>Printf</h2>
+            <p>İfade veya sabiti ekrana bastırmak için kullanılan fonksiyondur.</p>
+            <pre>
+                <code>
+                    void main()<div class="comment">//main() fonksiyonu her C programlama da olması gereken ana fonksiyondur. 
+Eğer içe herhangi bir değer döndürmez ise "void" kelimesini başına alır.</div>
+                    {
+                    printf("Hello World!");
+                    return 0;
+                    }    
+                </code>
+            </pre>
+            <pre>
+                <code>
+
+                      Program Çıktısı: Hello World!
+                </code>
+            </pre>
+            <h2>Scanf</h2>
+            <p>Kullanıcı tarafından programa girilmek istenen değeri ifadeye atar.</p>
+            <pre>
+                <code>
+                    void main()
+                    {
+                       int sayi;
+                       printf("Lutfen bir sayi girin: ");
+                       scanf("%d",&amp;sayi); <div class="comment">// sayı ifadesi integer tipinde tanımlandığı için "%d" ifadesini kullandık. 
+"&amp;" işareti ise istenilen değeri tanımlanan ifadeye aktarmada kullanılır.
+Pointer kısmında (&amp;) işlevini daha iyi göreceğiz.</div>
+                       return 0;
+                    }
+                </code>
+            </pre>
+            <pre>
+                <code>
+
+                    Program Çıktısı: Kullanıcıdan girilen sayı görüntülenir.
+                </code>
+            </pre>
+
+            <h2>Puts</h2>
+            <p>İfade veya sabiti ekrana bastırmak için kullanılan fonksiyondur. Printf fonksiyonuyla aynı işlevi görür.</p>
+
+            <h2>Gets</h2>
+            <p>Kullanıcı tarafından programa gilirmel istenen değeri alır. Scanf fonksiyonu gibi işlev görür ama bir farkı vardır.
+                <ul class="altlist difference">
+                    <li>Scanf fonkisyonunda girilen değerde boşluk kullanılırsa, kullanıcıdan alınan değer boşluk olan kısma kadardır.</li>
+                    <li>Gets fonkisyonu ise kullanıcıdan alınan değerde boşluğu da okur.</li>
+                </ul>
+                <p style="margin-left: 3em;">Bir örnekle açıklayalım. Kullanıcıdan alınan değer "Hello World!" olsun.</p>
+                <p style="margin-left: 5em;">Scanf fonksiyonuna göre program çıktısı: Hello</p>
+                <p style="margin-left: 6em;">Gets fonksiyonuna gire program çıktısı: Hello World!</p>
+            </p>
+            <pre>
+                <code>
+                    void main()
+                    {
+                        char dizi[100];
+                        printf("Bir dizi girin:\n");
+                        gets(dizi);
+                        puts(dizi);
+                        return 0;
+                    }
+
+                </code>
+            </pre>
+            <pre>
+                <code>
+                    Program Çıktısı:
+                          Bir dizi girin: 
+                          Kullanıcıdan Alınan Değer
+
+                </code>
+            </pre>
+
+            <h1 id="7">ARTİTMATİKSEL OPERATÖRLER</h1>
+            <ul class="altlist">
+                <li>Toplama(+)</li>
+                <li>Çıkarma(-)</li>
+                <li>Bölme(/)</li>
+                <li>Çarpma(*)</li>  
+                <li>Mod(%)</li>
+            </ul>
+            <p style="margin-left:5em;">Mod (%) operatörü float ve double tiplerinde kullanılmaz.</p>
+
+            <h1 id="8">ATAMA OPERATÖRLERİ</h1>
+            <pre>
+                <code>
+                    void main()
+                    {
+                        int azalandeger=2;
+                        int sayi;
+                        printf("Lutfen Bir Sayi Giriniz.");
+                        scanf("%d",&sayi);
+                        sayi=sayi-azalandeger;
+                        printf("Sayiniz: %d",sayi);
+                        return 0;
+                    }
+                </code>
+                <p style="font-size: 1em;">Kullanıcıdan 5 sayısını alalım.</p>
+
+
+            </pre>
+                <pre>
+                    <code>
+                    Program Çıktısı: Lutfen Bir Sayi Giriniz.
+                    5
+                    Sayiniz:3
+                </code>
+                </pre>
+            <p>Burada <code>sayi=sayi-azalandeger; </code> ifadesini kısa yoldan <code>sayi-=azalandeger</code> olarak da yazabiliriz.</p>
+
+            <h1 id="9">UNARY OPERATÖRLER</h1>
+            <p>
+                  x [operatör] değişkeni önce işlemi yapıp daha sonra operatörü gerçekleştirir. <br>
+                [operatör] x değişkeni önce operatörü gerçekleştirip daha sonra işlemi yapar.
+            </p>
+            <pre>
+                <code>
+                void main()
+                {
+                    float x=5.2,y=5.2;
+                    printf("++x degeri: %.2f\n",++x);printf("y++ degeri: %.2f\n",y++); <div class="comment">// Burada %.2f ifadesinin kullanım amacı virgülden sonra gelen 2 sayıyı tutmak içindir.</div> 
+                    printf("\nArttirma sonrasi x: %.2f",x);
+                    printf("\nArttirma sonrasi y: %.2f\n",y);
+                    return 0;
+                }
+               </code>
+               <pre>
+                                  <code>
+                PROGRAM ÇIKTISI
+                ++x degeri: 6.20
+                y++ degeri: 5.20
+                Arttirma sonrasi x: 6.20
+                Arttirma sonrasi y: 6.20
+               </code>
+               </pre>
+
+
+            </pre>               
+            <p style="font-size: 1.1em; margin-left: 4em;">x değişeni 1 arttırılıp görüntülenirken y değişkeni önce görüntülenip sonra arttırılır. <br>Bu tür klavyeden değer girilmeyen programlara non-interactive program denir.
+            </p>
+            <h1 id="10">PROGRAM KONTROL YAPILARI</h1>
+            <p>C programlama bütün işlemler kod sırasıyla gerçekleşir. Ancak bazı kontrol yapıları programın akışını bir veya birkaç koşulun gerçekleşmesine bağlı olarak ya da gerçekleşmesi olmadan da değiştirilebilir. <br><br>
+            Programlama kontrol yapıları ikiye ayrılır.</p>
+            <ul class="altlist">
+                <li>KARŞILAŞTIRILMALI KONTROL YAPILARI (if-else-else if / switch-case)</li>
+                <li>DÖNGÜ KONTROL YAPILARI (for-while-do/while-goto</li>
+            </ul>
+            <h1 id="11">IF KONTROL YAPISI</h1>
+            <p>Bir veya birden fazla koşulun gerçekleşmesi durumuna göre çalışmasını sağlayan kontrol yapısıdır.</p>
+
+            <pre>
+                <code>
+                    if(koşul)
+                    {
+                        işlemler;
+                    }
+                </code>
+                <hr color="black">
+                <code>
+                    if(koşul)
+                    {
+                        işlem 1;
+                        işlem 2;
+                        işlem n;
+                    }
+                    else
+                    {
+                        işlem 1;
+                        işlem 2;
+                        işle n;
+                    }
+    else yapısı, if bloğundaki koşul sağlanmadığı takdirde çalışır.
+                </code>
+            </pre>
+            <h1 id="12">SWITCH CASE YAPISI</h1>
+            <P>switch-case yapısı, çok durumlu ifadelerde kullanılır. IF yapısı ile aynı işler.</P>
+            <pre>
+                <code>
+                    void main()
+                    {
+                        switch(ifade)
+                        {
+                            case 1: 
+                            <div class="comment" style="margin-left: 15em;">Kodlar;</div>
+                           break;
+
+                        case 2:
+                            <div class="comment" style="margin-left: 15em;">Kodlar;</div>
+                           break;
+                           .
+                           .
+                           .
+                        }
+                    }
+                </code>
+            </pre>
+            <h1 id="13">DÖNGÜ KONTROL YAPISI</h1>
+            <p>Tekrarlı ifadelerde kullanmamız gereken yapıdır. Örneğin ekrana 10 defa "Hello World!" bastırmak istiyoruz. Bu ifadeyi 10 defa ayrı ayrı yazmak programımızı yoracaktır. Bunun için while, do/while veya for döngülerinden faydalanabilirsiniz.</p>
+            <h2>While Döngüsü</h2>
+            <pre>
+                <code>
+                    void main()
+                    {
+                        int sayi=3;
+                        printf("Lutfen bir sayi giriniz:");
+                        scanf("%d",&amp;sayi);
+
+                        while(sayi &#60; 5)
+                        {
+                            sayi++;
+                        }
+                        printf("En son sayi degeriniz: %d",sayi);
+                    }
+                </code>
+            </pre>
+                <pre>
+                                    <code>
+                    Program Çıktısı: 5
+
+        Başlangıçta sayı değerimiz 3. 3&#60;5 ifadesi sağlandığından döngünün içine girer ve bir artar.
+        Yeni sayı değerimiz 4. 4&#60;5 ifadesi sağlandığından döngünün içine girer ve bir artar.      
+        Yeni sayı değerimiz 5'tir. 5&#60;5 olmadığından dolayı en son sayı değerimiz 5 olarak ekrana basılır.
+                </code>
+                </pre>
+
+                <h2>Do/While Döngüsü</h2>
+                <p>Bu döngüde koşul sonda veriliri.</p>
+                <pre>
+                    <code>
+                        void main()
+                        { 
+                            int sayi=5;
+                            do{
+                                sayi++;
+                                printf("Sayiniz:%d\n",sayi);
+                            }while(sayi&#60;10)
+                        }
+                     
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        Program Çıktısı;
+
+                                Sayiniz:6
+                                Sayiniz:7
+                                Sayiniz:8
+                                Sayiniz:9
+                                Sayiniz:10
+                    </code>
+                </pre>
+
+                <h2>For Döngüsü</h2>
+                <p>for(ifade1;ifade2;ifade3)</p>
+                <pre>
+                    <code>
+                        void main()
+                        {
+                            int sayi=5;
+                            for(int i=1;i&#60;sayi;i++)
+                            {
+                                printf("Sayiniz:%d\n",i);
+                            }
+                        }
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        Program Çıktısı:
+
+                                Sayiniz:1
+                                Sayiniz:2
+                                Sayiniz:3
+                                Sayiniz:4
+                    </code>
+                </pre>
+                <h1 id="14">C PROGRAMLAMADA ANAHTAR KELİMELER</h1>
+                <p class="text"> auto: C ile B dili arasında uyum sağlamak için kullanılır. Fakat C dilinde pek karşımıza çıkan bir yapı değildir.</p>
+                <p class="text">break : Döngünün sonlanmasını sağlayan yapıdır. Switch yapısı ile kullanılır.</p>
+                <p class="text">case: Switch yapısı içinde hangi işlemin yapılacağına karar veren yapıdır.</p>
+                <p class="text">char:Karakter değişen tipidir.  Tek karakterden oluşuyorsa "%c", karakter topluluğundan oluşuyorsa "%s" kullanılır.</p>
+                <p class="text">const: Değişkenin başına getirilen "const" ifadesi hiçbir zaman değiştirilemez. #define yapısı da "const" yapısına eş değer bir ifadedir.</p>
+                <p class="text">continue: Döngünün devam etmesini sağlayan yapıdır.</p>
+                <p class="text">default:Switch içinde kullanılabilen bir yapıdır.</p>
+                <p class="text">do: Bir döngüdür. "while" yapısı ile kullanılır.</p>
+                <p class="text">double: Değişken tiplerindendir. Reel sayılarda kullanılır."%f" ile gösterilir. Virgülden sonra 15 basamak tutar.</p>
+                <p class="text">else: Koşul ifadesidir. Kendinden sonra herhangi bir koşul istemez. "else" olarak kullanılır.</p>
+                <p class="text">enum: Kendi değişken tipimizin başına enum kelimesini getirerek iki seçenekli bir değişken yazmış oluruz. Üçüncü bir ihtimal gerçekleşemez.</p>
+                <p class="text">extern: Uzun bir program parçalara bölündüğünde, ilk programda kullanılan global değişkeni diğer dosyalara aktarmakta kullanılır.</p>
+                <p class="text">float: Değişken tiplerindendir. Reel sayılarda kullanılır."%f" ile gösterilir. Virgülden sonra 6 basamak tutar.</p>
+                <p class="text"> for : Bir döngüdür.</p>
+                <p class="text">goto : İstenilen yerde programı farklı bir yerden başlatan bir ifade türüdür.</p>
+                <p class="text">if : Koşul ifadesidir. "if()" şeklinde kullanılır.</p>
+                <p class="text">int: Değişen tipidir. Tam sayıları tanımlarken bu değişken tipini kullanılırız, "%d" ile ifade edilir.</p>
+                <p class="text">long : Büyük değerleri tutan değişken tipidir.</p>
+                <p class="text">register: Çok kullandığınız bir değişkenin başına eklenen register ifadesi çalışma hızını arttırmada fayda sağlar.</p>
+                <p class="text">return: Verileri içe döndürmeye yarar.</p>
+                <p class="text">short : Küçük değerleri tutan değişken tipidir.</p>
+                <p class="text"> signed : Bu yapı hem pozitif hem negatif değerleri bünyesinde barındırır.</p>
+                <p class="text">sizeof: '\0' (null) karakteriyle birlikte kaç karakterli olduğunu gösteren yapıdır</p>
+                <p class="text">static: Local ya da global tipiyle tanımlanan herhangi bir fonksiyonu her çağırdığımız zaman değeri yenilenir. Ancak static tipiyle tanımlanan bir değer tuttuğu değeri korumaya devam eder.</p>
+                <p class="text">struct :  Birden fazla değişken tipini tutmamızı sağlayan yapıdır.</p>
+                <p class="text">switch : Bir döngüdür.</p>
+                <p class="text">typedef : Tanımlanan değişken tiplerini değiştirmeye yarar. Bundaki temel amaç kodların anadiline biraz daha yaklaşmasını sağlamaktır. "struct" yapısı ile kullanılırsa eğer oluşturulan yapıyı farkli bir değişken tipi olarak tanımlayıp kopyalamanıza yardım eder.</p>
+                <p class="text">union : Değişkenlerin ortak bir bellekte kullanabilmesini sağlar.</p>
+                <p class="text">unsigned : Bu yapı sadece 0 ifadesini bünyesinde barındırır.</p>
+                <p class="text">void : Bir değişkenin tipi yoksa veya belli değilse void fonksiyonu kullanılır ve içeri bir fonksiyon döndürmez.</p>
+                <p class="text">volatile: Veri tipinden önce veya sonra gelen bu ifade değerin herhangi bir zamanda değişebileceğini gösterir ve "id" ile birlikte kullanılır.</p>
+                <p class="text">while  : Bir döngüdür. Do yapısı ile de kullanılabilir.</p>
+        </article>
+      </section>
+</body>
+</html>

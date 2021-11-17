@@ -1,0 +1,128 @@
+img.anaresim
+{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width:70em;
+    height: 25em;
+    margin-bottom: 3em;
+    padding: 1em 1em;
+    border: 0.2em solid black;
+    border-radius: 3em;
+}
+.font1
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.font2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body
+{
+ 
+    font-size: 1.3em;
+    background-color: #99c1de;
+}
+.note
+{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 3px;
+}
+.list
+{
+    list-style: decimal;
+}
+h2
+{
+    text-align: center;
+    margin-top: 1.6em;
+}
+.part1
+{
+    background-color: burlywood;
+    margin-left: 1.5em;
+    padding: 1.2em;
+}
+.header
+{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.9em;
+    letter-spacing: 0.3em;
+}
+.image
+{
+    display:table;
+    margin: auto;  
+}
+nav li
+{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #fde2e4; 
+}
+.center
+{
+    margin: auto;
+    display: table;
+}
+li.navbar 
+{
+    list-style-type: none;
+    float: left;
+}
+nav li a.link
+{
+
+    text-align: center;
+    font-size: 29px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 35px;
+}
+li a:hover
+{
+    background-color: #99c1de;
+    color: white;
+
+}
+a:hover
+{
+    font-size: 33px;
+}
+.margincontrol
+{
+    margin-left: 2em;
+    line-height: 2em;
+}
+.note2
+{
+    font-size: 1.2em;
+    text-align: right;
+}
+ul.list li a
+{
+    text-decoration: none;
+}
+img.altresimler
+{
+    margin: 1em;
+}
+.last
+{
+    color: rgb(190, 104, 33);
+    font-size: 1.4em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+.margin
+{
+    margin-left: 1em;
+}

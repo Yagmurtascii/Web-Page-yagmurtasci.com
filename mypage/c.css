@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  body
+  {
+    background-color: #99c1de;
+  }
+  nav.beginning
+  {
+   margin-bottom: 9em;   
+  }
+ nav.menu {
+    position: static;
+    float: left;
+    width: 24%;
+    height:110em; /* only for demonstration, should be removed */
+    background: #99c1de;
+    padding: 10px;
+    padding-bottom: 3em;
+    border: 4px solid black;
+    overflow: hidden;
+
+    
+  }
+  nav.menu ul li
+  {
+      border-bottom: 4px solid black;
+  }
+  nav.menu ul li a
+  {
+      text-transform:uppercase ;
+      text-decoration: none;
+      color: black;
+      line-height: 0.9em;
+      font-size: 1em;
+      text-align: center;
+
+  }
+  nav.menu ul li a:hover
+  {
+      color: white;
+      border: 0.10em solid white;
+      border-radius: 0.2em;
+      box-sizing: content-box;
+  }
+  
+ /*Style the list inside the menu */
+ nav.menu ul {
+    padding: 4em;
+    font-size: 1.3em;
+  }
+  header {
+    border: 4px solid black;
+    background-color: #99c1de;;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+  }
+  section::after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  article {
+    border: 4px solid black;
+    float: right;
+    margin: auto;
+    width: 76%;
+    padding-left: 2em;
+    background-color: #99c1de;
+    height: 700em; /* only for demonstration, should be removed */
+  }
+  h1
+  {
+      font-size: 2.4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  p
+  {
+      font-size: 1.3em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ ul.altlist li
+  {
+      margin-left: 2em;
+      list-style-type: circle;
+      font-size: 1.3em;
+  }
+  .difference
+  {
+     margin-right: 22px;
+      border: 2px solid black;
+      text-align: center;
+  }
+ .difference ul li
+  {
+      list-style-type: none;
+  }
+  ul.difference li
+  {
+    list-style-type: none;
+  }
+  p.example
+  {
+      background-color: cornsilk;
+  }
+  div.comment
+  {
+      color: green;
+
+  }
+  pre
+  {
+     margin-right: 2em;
+      font-size: 1.2em;
+      background-color: rgb(158, 152, 152);
+  }
+  nav.beginning li
+  {
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+      background-color: #fde2e4; 
+  }
+  .center
+  {
+      margin: auto;
+      display: table;
+  }
+  li.navbar
+  {
+      list-style-type: none;
+      float: left;
+  }
+  li a
+  {
+      text-align: center;
+      font-size: 29px;
+      color: black;
+      display: block;
+      text-decoration: none;
+      padding: 35px;
+  }
+  li a:hover
+  {
+      background-color: #99c1de;
+      color: white;
+
+  }
+
+  p.text
+  {
+    margin-left: 4em;
+  }
+
+
+
+
+  
